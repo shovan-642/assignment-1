@@ -85,11 +85,16 @@ main {
     color: #444343;
 }
 
-ul.failure-list {
+.failure-list-content ul {
+    list-style: none;
+    padding-left: 0;
     margin-left: 0;
-    padding-left: 12px;
 }
 
+.failure-list-content ul li::before {
+    content: '✓';
+    color: #16D887;
+}
 
 .my-plan-section h2 {
     font-style: normal;
@@ -152,11 +157,13 @@ ul.failure-list {
     background-size: cover;
     color: white;
     padding: 20px;
+    margin-bottom: 130px;
 }
 
 .calling-content {
     margin-left: 64px;
 }
+
 .calling-content h3 {
     font-family: 'Work Sans';
     font-style: normal;
@@ -170,5 +177,107 @@ ul.failure-list {
 
 .calling-content .call-now-button {
     padding: 20px 36px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    color: #005FAC;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
 
+}
+
+.footer {
+    background-color: #151414;
+    height: 577px;
+    background-size: cover;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-info h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #F8F8F8;
+    margin-top: 130px;
+    margin-bottom: 16px;
+}
+
+.contact-info .description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.email,
+.phone {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.email {
+    margin-bottom: 16px;
+}
+
+.phone {
+    margin-bottom: 32px;
+}
+
+.social-icon a img {
+    margin-left: 0;
+    margin-right: 17px;
+    width: 47px;
+    height: 46px;
+}
+
+.subscribe-info {
+    margin-top: 130px;
+}
+
+.subscribe-info h3 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-bottom: 31px;
+}
+
+.input-email {
+    width: 325px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #F3F3F3;
+}
+
+.subscribe-button {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #005FAC;
+    border-radius: 8px;
+    border: 0;
+    padding: 20px 36px;
 }
