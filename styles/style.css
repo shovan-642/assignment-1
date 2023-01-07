@@ -288,7 +288,7 @@ main {
     padding: 20px 36px;
 }
 
-.subscribe-button a {
+a.subscribe-button {
     text-decoration: none;
     color: #FFFFFF;
 }
